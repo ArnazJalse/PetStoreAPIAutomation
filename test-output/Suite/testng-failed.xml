@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="Chrome"/>
+  <listeners>
+    <listener class-name="api.utilities.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="PetStoreTest(failed)">
+    <classes>
+      <class name="api.test.StoreTest">
+        <methods>
+          <include name="testGetOrderById"/>
+          <include name="setupData"/>
+          <include name="testPostOrder"/>
+          <include name="testDeleteOrder"/>
+        </methods>
+      </class> <!-- api.test.StoreTest -->
+    </classes>
+  </test> <!-- PetStoreTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
