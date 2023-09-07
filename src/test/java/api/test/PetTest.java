@@ -28,10 +28,10 @@ public class PetTest {
 	public  void setupDdata() throws FileNotFoundException, IOException, ParseException {
 
 		mapper = new ObjectMapper();
-		pet = mapper.readValue(new File("D:\\test\\ArnazWork\\PetStoreAPIAutomation\\src\\test\\resources\\pet.json"), Pet.class);
+		pet = mapper.readValue(new File("pet.json"), Pet.class);
 		System.out.println(pet.id);
 		
-		updatePet = mapper.readValue(new File("D:\\test\\ArnazWork\\PetStoreAPIAutomation\\src\\test\\resources\\petUpdate.json"), Pet.class);
+		updatePet = mapper.readValue(new File("petUpdate.json"), Pet.class);
 		System.out.println(updatePet.name);
 		
 		//logs
